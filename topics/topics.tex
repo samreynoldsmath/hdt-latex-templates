@@ -1,0 +1,152 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% META DATA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\TITLE{
+	Syllabus for the Ph.D. Comprehensive Exam in\\Hot Dog Theory
+}
+\newcommand\SHORTTITLE{Hot Dog Theory Syllabus}
+\newcommand\DATE{Fall 2023}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% package for projects with multiple files
+\usepackage{subfiles}
+
+% formatting packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=3cm]{geometry}
+\usepackage{titling}	% title formatting
+\usepackage{titlesec}	% section formatting
+\usepackage{fancyhdr}	% headers and footers
+
+% symbol packages
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% additional packages
+% \usepackage{bbm} 	    % blackboard bold numbers
+\usepackage{enumitem}	% better enumerate/itemize environments
+% \usepackage{graphicx} 	% images
+\usepackage{hyperref} 	% clickable links/toc
+% \usepackage{minted}		% code highlighting
+% \usepackage{tabu}		% better tabular environments
+% \usepackage{tikz}	 	% diagrams
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FORMATTING
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Title formatting
+\pretitle{\begin{center}\large\bfseries} % Change the font and size
+\posttitle{\end{center}\vspace{-1em}} % Adjust vertical spacing after the title
+\predate{\vspace{-8mm}\begin{center}}
+\postdate{\end{center}}
+
+% Page headers and footers
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[C]{\thepage}
+\lfoot{\scriptsize \SHORTTITLE}
+\rfoot{\scriptsize Last updated: \today}
+\fancypagestyle{plain}{\pagestyle{fancy}}
+
+% % Chapters, sections, subsection formats
+\titleformat{\section}[hang]{\bfseries}{\thesection.}{5pt}{}[]
+\titleformat{\subsection}[runin]{\bfseries\small}{\thesubsection.}{5pt}{}[]
+
+% Tabular environments
+% \tabulinesep = 5pt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THEOREM ENVIRONMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\theoremnumberstyle{none}
+\input{sams-theorems.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MACROS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{sams-macros.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FRONT MATTER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\title{\TITLE}
+\date{\DATE}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BODY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Elementary concepts}
+\begin{itemize}[itemsep=0pt]
+	\item Buns and meats
+	\item Condiment homologies
+	\item Sandwich complexes
+\end{itemize}
+
+
+\section*{Important theorems}
+\begin{itemize}[itemsep=0pt]
+	\item Fundamental theorem of taco algebra
+	\item Boyardee's ravioli lemma
+\end{itemize}
+
+
+\begin{thebibliography}{9}
+
+	\bibitem{hotdog}
+		G. Fieri,
+		\emph{Hot Dog Theory and Its Applications to Condiment Chains},
+		Springer (2022).
+
+	\bibitem{ravioli}
+		C. Boyardee,
+		\emph{Introduction to Pasta Topology},
+		Society of American Culinary Scientists (1988).
+
+\end{thebibliography}
+
+
+\section*{Supporting courses}
+MTH 675/676/677: Advanced Sandwich Theory
+
+
+\section*{Instructor}
+
+
+\noindent
+Gordon Ramsay
+\\
+Professor of Condimentology
+\\
+tacoman@foodnetwork.edu
+\\[2cm]
+\noindent
+\rule{0.5\textwidth}{0.4pt}
+\hspace{5mm}
+\rule{0.2\textwidth}{0.4pt}
+\\
+Signature
+\hspace{66mm}
+Date
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
